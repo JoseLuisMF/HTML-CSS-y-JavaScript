@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Elementos de un formulario con HTML5</title>
+   <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo para:
+        - HTML5 Nuevos elementos para formularios
+     Todos los atributos y propiedades estan explicados en el word HTML5 -->
+  </head>
+  <body>
+       <form action="data.php" name="formulario" method="post">
+        <input type="text" list="actores">
+        <datalist id="actores">
+            <option value="Jack Lemon">
+            <option value="Paul Newman">
+            <option value="Cary Grant">
+            <option value="James Stewart">
+            <option value="James Dean">
+        </datalist>
+       </form>
+       <br>
+       <form action="data.php" name="formulario" method="post">
+        Usuario: <input type="text" name="usuario">
+        Tipo de encriptacion: <keygen name="encriptacion">
+        <input type="submit" value="Enviar">
+       </form>
+       <br>
+       <form oninput="resultado.value=parseInt(campo1.value) + parseInt(campo2.value)">
+        <input type="number" id="campo1" value="">    +
+        <input type="number" id="campo2" value="">     =
+        <output name="resultado" for=" campo1 campo2 "></output>
+       </form>
+  </body>
+</html>
