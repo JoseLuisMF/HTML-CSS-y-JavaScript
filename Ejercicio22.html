@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Formulario con CSS</title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    <link type="text/css" rel="stylesheet" href='C:\Users\Encargado\Desktop\GitHub\HTML-CSS-y-JavaScript\CSS\Ejercicio22css.css'>
+    <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo para:
+        - Formulario
+     Todos los atributos y propiedades estan explicados en el word CSS -->
+  </head>
+  <body>
+    <div id="contenedor">
+       <form action="data.php" name="formulario1" id="formulario1" method="post">
+        <fieldset id="grupo_datos">
+         <legend id="legend_datos">Datos personales</legend>
+         <label for="nombre">Nombre: </label>
+         <input type="text" name="nombre" id="nombre">
+         <label for="apellidos">Apellidos: </label>
+         <input type="text" name="apellidos" id="apellidos">
+         <label for="dni">DNI: </label>
+         <input type="text" name="dni" id="dni">
+         <label for="edad">Edad: </label>
+         <input type="text" name="edad" id="edad" size="2" maxlength="2">
+         <div>
+           <label for="sexo">Sexo: </label>
+            <select name="sexo" id="sexo">
+            <option value="X" selected="selected">...</option>
+            <option value="H">Hombre</option>
+            <option value="M">Mujer</option>
+         </select>
+         </div>
+        <fieldset id="grupo_fechas">
+         <legend id="legend_fechas">Fecha de nacimiento</legend>
+         <div class="fecha">
+           <label for="dia">Dia: </label>
+            <select name="dia" id="dia">
+            <option value="X" selected="selected">...</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+         </select>
+         </div>
+         <div class="fecha">
+           <label for="mes">Mes: </label>
+            <select name="mes" id="mes">
+            <option value="X" selected="selected">...</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+         </select>
+         </div>
+         <div class="fecha">
+           <label for="anio">Año: </label>
+            <select name="anio" id="anio">
+            <option value="X" selected="selected">...</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+         </select>
+         </div>
+        </fieldset>
+        <fieldset id="grupo_sugerencias">
+         <legend>Sugerencias</legend>
+         <textarea name="argumento" id="argumento" rows="14" cols="50"></textarea>
+        </fieldset>
+        <div id="capa_enviar">
+            <input type="submit" value="Enviar Datos" id="boton_enviar" name="boton_enviar"/>      
+        </div>
+                                                                                       
+       </form>
+      </div>
+  </body>
+</html>
