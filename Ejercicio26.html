@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Personalizacion de texto </title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>  ç
+      <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo sencillo de:
+        -Personalizacion de texto 
+     Todos los atributos y propiedades estan explicados en el word CSS3-->
+     <style type="text/css">
+     .texto1{
+        width: 750px;
+        border: 1px solid black ;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: clip;
+     }
+     .texto2{
+        width: 750px;
+        border: 1px solid black ;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipse;
+     }
+     .texto3{
+        width: 300px;
+        border: 1px solid black ;
+        word-break: keep-all;
+     }
+     .texto4{
+        width: 750px;
+        border: 1px solid black ;
+        word-break: break-all;
+     }
+     </style>
+  </head>
+  <body>
+      <h3>
+       En este parrafo se suprimira la parte sobrante del texto. Propiedad: "text-overflow: clip"
+      </h3>
+      <div class="texto1">
+       Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar 
+       de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico. 
+       Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. 
+       Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más recientemente, con software de 
+       autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
+      </div>
+      <h3>
+       En este parrafo agregamos puntos suspensivos al final del texto. Propiedad: "text-overflow: ellipse"
+      </h3>
+      <div class="texto2">
+       Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar 
+       de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico. 
+       Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. 
+       Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más recientemente, con software de 
+       autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
+      </div>
+      <h3>
+       En este parrafo mantiene todos los saltos de linea. Propiedad: "word-break: keep-all"
+      </h3>
+      <div class="texto3">
+       Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar 
+       de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico. 
+       Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. 
+       Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más recientemente, con software de 
+       autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
+      </div>
+      <h3>
+       En este parrafo se producen todos los saltos de linea necesarios. Propiedad: "word-break: break-all"
+      </h3>
+      <div class="texto4">
+       Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar 
+       de la industria desde el siglo XVI, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico. 
+       Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. 
+       Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contienen pasajes de Lorem Ipsum y, más recientemente, con software de 
+       autoedición como Aldus PageMaker que incluye versiones de Lorem Ipsum.
+      </div>
+  </body>
+</html>

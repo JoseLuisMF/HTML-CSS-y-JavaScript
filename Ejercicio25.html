@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Textos en columnas</title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+     <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo sencillo de:
+        -Textos en clomunas 
+     Todos los atributos y propiedades estan explicados en el word CSS3-->
+     <style type="text/css">
+     .sombreada_y_redondeada{
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 10px ;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        background-color: #5d5858;
+        border-radius: 20px;
+        box-shadow: 10px 10px 2px #CCCCCC;
+     }
+     .texto_sombreado{
+        font-size: 48px;
+        font-weight: bold;
+        text-shadow: 3px 3px #CCCCCC ;
+        margin: 20px;
+     }
+     .parrafos_columnas{
+        columns: 3;
+        column-rule: 2px solid #FFFFFF;       
+     }
+     </style>
+  </head>
+  <body>
+     <div class="texto_sombreado">
+      Hercules
+     </div>
+     <div class="parrafos_columnas sombreada_y_redondeada">
+      Hercules, son of the Greek God, Zeus, is turned into a half-god, half-mortal by evil Hades, God of the Underworld, who plans to overthrow Zeus. 
+      Hercules is raised on Earth and retains his god-like strength, but when he discovers his immortal heritage Zeus tells him that to return to Mount Olympus 
+      he must become a true hero. Hercules becomes a famous hero with the help of his friend Pegasus and his personal trainer, Phil the satyr. Hercules battles 
+      monsters, Hades and the Titans, but it is his self-sacrifice to rescue his love Meg which makes him a true hero.
+     </div>
+  </body>
+</html>

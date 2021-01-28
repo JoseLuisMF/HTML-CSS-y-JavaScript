@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'> 
+    <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo sencillo de:
+        -Textos y fuentes
+     Todos los atributos y propiedades estan explicados en el word CSS3-->
+     <style type="text/css">
+     .boton{
+        background-color: blue;
+        border: none ;
+        color: white;
+        padding: 20px ;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     }
+     .boton2{
+        background-color: blue;
+        border: none ;
+        color: white;
+        padding: 20px ;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 8px;
+     }
+     .menu-horizontal{
+       margin-top: 10px; 
+     }
+     .boton-menu{
+       background-color: blue;
+       border: 2px solid blue ;
+       padding: 20px 5px 20px 5px ;
+       color: white;
+       text-align: center;
+       font-size: 16px;
+       cursor: pointer;
+       float: left;
+       margin-right: 2px;
+       border-radius: 8px;
+       width: 125px;
+     }
+     .boton-menu:not(:last-child){
+        border-right: none ;
+     }
+     .boton-menu:hover{
+        background-color: white;
+        border: 2px solid blue ;
+        color: blue;
+     }
+     </style>
+  </head>
+  <body>
+    <button class="boton">
+     Enviar Datos
+    </button>
+    <button class="boton2">
+     Enviar Mas Datos
+    </button>
+    
+    <div class="menu-horizontal">
+        <button class="boton-menu">
+            Configuracion
+        </button>
+        <button class="boton-menu">
+            Herramientas
+        </button>
+        <button class="boton-menu">
+            Facturas
+        </button>
+        <button class="boton-menu">
+            Pedidos
+        </button>
+        <button class="boton-menu">
+            Ayudas
+        </button>
+    </div>
+    
+  </body>
+</html>
