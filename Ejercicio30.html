@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Estructura de control</title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo sencillo de:
+        - Estructura de control
+     Todos los atributos y propiedades estan explicados en el word JavaScript-->
+    <script type="text/javascript">
+        var diasemana= "lunes";
+        var edad=36;
+        switch (diasemana){
+            case "lunes": if(edad<35)
+                alert ("El precio de entrada es de 2€");
+            else
+                alert ("El precio de entrada es de 5€");
+            break;
+            case "martes": if(edad<25)
+                alert ("El precio de entrada es de 2€");
+            else{
+                if((edad>25) && (edad<50))
+                    alert ("El precio de entrada es de 5€");
+                else
+                    alert ("El precio de entrada es de 7€");
+            }
+            break;
+            case "miercoles": if(edad<18)
+                alert ("El precio de entrada es de 3€");
+            else{
+                if((edad>18) && (edad<50))
+                    alert ("El precio de entrada es de 5€");
+                else
+                    alert ("El precio de entrada es de 8€");
+            }
+            break;
+            case "jueves": if(edad<18)
+                alert ("El precio de entrada es de 5€");
+            else
+                alert ("El precio de entrada es de 10€");
+            break;
+        }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

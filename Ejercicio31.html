@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='cs'>
   <head>
-    <title>Integracion JavaScript en HTML</title>
+    <title>Bucle for</title>
     <meta charset='utf-8'>
     <meta name='description' content=''>
     <meta name='keywords' content=''>
@@ -11,21 +11,17 @@
     <link href='/favicon.png' rel='shortcut icon' type='image/png'>
     <!-- Esto es un comentario que solo podremos ver en el editor Web.
      Realizamos un codigo sencillo de:
-        -Integracion JavaScript en HTML
+        - Bucle for
      Todos los atributos y propiedades estan explicados en el word JavaScript-->
     <script type="text/javascript">
-        var a=2;
-        var b=2;
-        if (a==b)
-            alert ("a y b son iguales");
-        else
-            alert ("a y b no son iguales");
+        for(var contador1=1; contador1<=5; contador1++){
+           document.write("<br>* Tema " + contador1+"<br>");
+           for(var contador2=1; contador2<=5; contador2++)
+             document.write("- Apartado "+contador1+"."+contador2+"<br>");   
+        }
     </script>
-    
   </head>
   <body>
-     <h2>
-      Integracion JavaScript en HTML
-     </h2>
+
   </body>
-</html>                   !
+</html>
