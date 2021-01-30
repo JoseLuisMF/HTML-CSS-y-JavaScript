@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Bucle While</title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo sencillo de:
+        - Bucle while
+     Todos los atributos y propiedades estan explicados en el word JavaScript-->
+    <script type="text/javascript">
+        var encontrado=false;
+        var buscado=5;
+        contador=0;
+        while(!encontrado){
+            document.write("Comprobando el numero "+contador+"<br>");
+            if(buscado==contador)
+                document.write("Numero encontrado, fin del bucle");
+            else{
+                document.write("Numero no encontrado, probamos con el siguiente numero<br>");
+                contador++;
+            }
+        }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

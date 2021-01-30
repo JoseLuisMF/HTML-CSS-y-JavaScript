@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Retornar valores</title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    <!-- Esto es un comentario que solo podremos ver en el editor Web.
+     Realizamos un codigo sencillo de:
+        - Retornar valores
+     Todos los atributos y propiedades estan explicados en el word JavaScript-->
+    <script type="text/javascript">
+        function mayorMenor (a,b){
+            var mayor;
+            if(a>b)
+                mayor=a;
+            else{
+                if(a<b)
+                    mayor=b;
+                else
+                    mayor=0;
+            }
+            return mayor;
+        }
+        
+        var numeroMayor= mayorMenor(4,5);
+        if(numeroMayor!=0)
+            alert("El numero mayor es: "+numeroMayor);
+        else
+            alert("Los numeros son iguales");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
